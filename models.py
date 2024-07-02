@@ -9,3 +9,10 @@ class User(db.Model):
 
     def __repr__(self):
         return f'<User {self.username}>'
+
+"""
+db = SQLAlchemy() # Create a new sqlalchemy object to manage our database 
+
+class User(db.Model): defines a new model(or table)named 'user'
+db.comlumn(...): defines the colums (or fields) in the table ...so each user has an id , username and email 
+"""

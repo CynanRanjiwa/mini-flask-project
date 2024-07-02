@@ -19,3 +19,15 @@ models.py : database models using SQLAlchemy
  Templates : folder for html templates 
   index.html : simple html file for the homepage 
 migrations : folder for database migrations (if using Flask-Migrate )
+
+
+IN INDEX.HTML THE EXPLANATION
+<h1>Users</h1>: This is the main heading of the page.
+
+<ul>: This creates an unordered list.
+
+{% for user in users %}: This starts a loop over the users list passed from the Flask route.
+
+<li>{{ user.username }} - {{ user.email }}</li>: For each user, it creates a list item with the username and email.
+
+{% endfor %}: This ends the loop.

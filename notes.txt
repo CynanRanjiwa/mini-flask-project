@@ -1,0 +1,21 @@
+1
+checking for the postgresql service 
+sudo systemctl list-units --type=service | grep postgresql
+2
+install postgresql (if not foung)
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+3
+starting the postgresql service
+sudo systemctl start postgresql
+4
+verifying the postgresql is running 
+sudo -u postgres psql
+
+5 
+app.py : main flask application
+config.py : configuration file for flask and sqlAlchemy
+models.py : database models using SQLAlchemy
+ Templates : folder for html templates 
+  index.html : simple html file for the homepage 
+migrations : folder for database migrations (if using Flask-Migrate )

@@ -31,3 +31,16 @@ IN INDEX.HTML THE EXPLANATION
 <li>{{ user.username }} - {{ user.email }}</li>: For each user, it creates a list item with the username and email.
 
 {% endfor %}: This ends the loop.
+
+
+some questions to test myself 
+
+What is the purpose of SECRET_KEY in a Flask application?
+
+Why do we use db.create_all() in our app.py?
+
+How do we query all users from the database in our Flask route?
+
+What is the role of the Config class in our config.py file?
+
+In the HTML template, what does {{ user.username }} do?
